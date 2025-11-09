@@ -22,9 +22,17 @@ jobs:
         run: go test -cover ./...
 
   style:
-    name: Style
+    name: style/code-formating checks
     runs-on: ubuntu-latest
 
     steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+
+      - name: Set up Go
+        uses: actions/setup-go@v5
+        with:
+          go-version: "1.25.1"
+
       - name: Style
         run: go fmt ./...
