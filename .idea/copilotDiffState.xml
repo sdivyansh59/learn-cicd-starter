@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CopilotDiffPersistence">
+    <option name="pendingDiffs">
+      <map>
+        <entry key="$PROJECT_DIR$/cloudbuild.yaml">
+          <value>
+            <PendingDiffInfo>
+              <option name="filePath" value="$PROJECT_DIR$/cloudbuild.yaml" />
+              <option name="originalContent" value="&#10;" />
+              <option name="updatedContent" value="steps:&#10;  # Step 1: Build the Go binary&#10;  - name: 'gcr.io/cloud-builders/go'&#10;    env:&#10;      - 'CGO_ENABLED=0'&#10;      - 'GOOS=linux'&#10;      - 'GOARCH=amd64'&#10;    args: ['build', '-o', 'notely', '.']&#10;&#10;# Timeout for the build&#10;timeout: 1200s&#10;&#10;" />
+            </PendingDiffInfo>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
